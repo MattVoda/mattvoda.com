@@ -11,9 +11,9 @@
 <meta name="author" content="KingStudio.ro">
 
 <!-- favicon -->
-<link rel="icon" href="images/favicon.png">
+<link rel="icon" href="images/logo.png">
 <!-- page title -->
-<title>VODA</title>
+<title>matt voda</title>
 <!-- bootstrap css -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- css -->
@@ -45,8 +45,7 @@
 
 <!-- header -->
 <header>
-    <!-- nav -->
-    <nav class="navbar navbar-default stacked-menu">
+    <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -55,11 +54,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-            </div><!-- / navbar-header -->
-            <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="logo"></a>
-            <div class="navbar-collapse collapse">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <!-- <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html"><span>HOME</span></a></li>
+                    <li><a href="index.html"><span>HOME</span></a></li>
                     <li><a href="about.html"><span>ABOUT</span></a></li>
                     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>BLOG</span> <span class="dropdown-icon"></span></a>
@@ -74,7 +73,7 @@
                     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>PORTFOLIO</span> <span class="dropdown-icon"></span></a>
                     <ul class="dropdown-menu animated zoomIn fast">
-                        <li><a href="grid-2col.html"><span>GRID 2COL</span></a></li>
+                        <li class="active"><a href="grid-2col.html"><span>GRID 2COL</span></a></li>
                         <li><a href="grid-3col.html"><span>GRID 3COL</span></a></li>
                         <li><a href="grid-4col.html"><span>GRID 4COL</span></a></li>
                         <li><a href="masonry-2col.html"><span>MASONRY 2COL</span></a></li>
@@ -95,48 +94,45 @@
                     </ul>
                     </li>
                     <li><a href="contact.html"><span>CONTACT</span></a></li>
-                </ul>
-            </div><!--/ nav-collapse -->
-        </div><!-- / container -->
+                </ul> -->
+            </div>
+        </div>
     </nav>
-    <!-- / nav -->
+    
 
     <!-- header-banner -->
-    <div id="header-banner" class="demo-4">
-        <div class="banner-content text-center">
-            <div class="banner-border">
-                <div class="banner-info">
-                    <h1>MINIMAL PORTFOLIO</h1>
-                    <p>Minimal Portfolio Bootstrap Theme</p>
-                </div><!-- / banner-info -->
-            </div><!-- / banner-border -->
-        </div><!-- / banner-content -->
-    </div>
+    <!-- <div id="header-banner">
+        <div class="banner-content single-page text-center">
+            <div class="banner-info">
+                <h1>PORTFOLIO</h1>
+                <p>Two Column Grid Portfolio</p>
+            </div>
+        </div>
+    </div> -->
     <!-- / header-banner -->
-    
 </header>
 <!-- / header -->
 
 <!-- content -->
 
 <!-- portfolio section -->
-<section id="portfolio" class="info-box">
+<section id="portfolio" class="info-box two-col">
     <div class="container">
         <!-- portfolio filter -->
         <ul class="portfolio-filter list-inline text-center">
             <li><a href="#" data-group="all" class="active">ALL</a></li>
-            <li><a href="#" data-group="graphic-design">GRAPHIC DESIGN</a></li>
-            <li><a href="#" data-group="branding">BRANDING</a></li>
-            <li><a href="#" data-group="logo-design">LOGO DESIGN</a></li>
-            <li><a href="#" data-group="illustration">ILLUSTRATION</a></li>
+            <li><a href="#" data-group="3dui">3D UI</a></li>
+            <li><a href="#" data-group="game">GAME</a></li>
+            <li><a href="#" data-group="physical">PHYSICAL</a></li>
+            <li><a href="#" data-group="graphic">GRAPHIC</a></li>
         </ul><!--end portfolio filter -->
         <ul class="row portfolio list-unstyled lightbox" id="grid">
             <!-- project -->
-            <li class="col-xs-6 col-md-4 project m-project" data-groups='["illustration"]'>
+            <li class="col-xs-6 project" data-groups='["3dui"]'>
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->
-                    <img src="images/m-project.jpg" alt="">
+                    <img src="images/project.jpg" alt="">
                     <!-- / project-image -->
 
                     <!-- project-hover-tools -->
@@ -144,22 +140,49 @@
                         <a href="single-project.html" class="view-btn">
                             <i class="lnr lnr-eye"></i>
                         </a>
-                        <a href="images/m-project.jpg" class="open-gallery">
+                        <a href="images/project.jpg" class="open-gallery">
                             <i class="lnr lnr-frame-expand"></i>
                         </a>
                     </div><!-- / project-hover-tools -->
 
                     <!-- project-details -->
                     <div class="project-details">
-                        <h5 class="project-title">PROJECT TITLE</h5>
-                        <p class="skill">SKILLS</p>
+                        <h5 class="project-title">FILE TREE</h5>
+                        <p class="skill">Drag a folder to interpolate its contents along the grab path.</p>
                     </div><!-- / project-details -->
                 </div><!-- / img-bg-color -->
             </li>
             <!-- / project -->
 
             <!-- project -->
-            <li class="col-xs-6 col-md-4 project" data-groups='["branding"]'>
+            <li class="col-xs-6 project" data-groups='["physical"]'>
+                <div class="img-bg-color primary">
+                    <a href="single-project.html" class="project-link"></a>
+                    <!-- / project-link -->
+                    <img src="images/project.jpg" alt="">
+                    <!-- / project-image -->
+
+                    <!-- project-hover-tools -->
+                    <div class="project-hover-tools">
+                        <a href="single-project.html" class="view-btn">
+                            <i class="lnr lnr-eye"></i>
+                        </a>
+                        <a href="images/project.jpg" class="open-gallery">
+                            <i class="lnr lnr-frame-expand"></i>
+                        </a>
+                    </div><!-- / project-hover-tools -->
+
+                    <!-- project-details -->
+                    <div class="project-details">
+                        <h5 class="project-title">LIGHTWEIGHT LIGHT HEADWEAR</h5>
+                        <p class="skill">Be the totem in the night that your friends need.</p>
+                    </div><!-- / project-details -->
+                </div><!-- / img-bg-color -->
+            </li>
+            <!-- / project -->
+
+            <!-- project -->
+            <li class="col-xs-6 project" data-groups='["logo-design"]'>
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->
@@ -186,34 +209,7 @@
             <!-- / project -->
 
             <!-- project -->
-            <li class="col-xs-6 col-md-4 project m-project" data-groups='["logo-design"]'>
-                <div class="img-bg-color primary">
-                    <a href="single-project.html" class="project-link"></a>
-                    <!-- / project-link -->
-                    <img src="images/m-project.jpg" alt="">
-                    <!-- / project-image -->
-
-                    <!-- project-hover-tools -->
-                    <div class="project-hover-tools">
-                        <a href="single-project.html" class="view-btn">
-                            <i class="lnr lnr-eye"></i>
-                        </a>
-                        <a href="images/m-project.jpg" class="open-gallery">
-                            <i class="lnr lnr-frame-expand"></i>
-                        </a>
-                    </div><!-- / project-hover-tools -->
-
-                    <!-- project-details -->
-                    <div class="project-details">
-                        <h5 class="project-title">PROJECT TITLE</h5>
-                        <p class="skill">SKILLS</p>
-                    </div><!-- / project-details -->
-                </div><!-- / img-bg-color -->
-            </li>
-            <!-- / project -->
-
-            <!-- project -->
-            <li class="col-xs-6 col-md-4 project" data-groups='["illustration", "logo-design", "branding"]'>
+            <li class="col-xs-6 project" data-groups='["illustration", "logo-design", "branding"]'>
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->
@@ -240,34 +236,7 @@
             <!-- / project -->
 
             <!-- project -->
-            <li class="col-xs-6 col-md-4 project m-project" data-groups='["graphic-design", "logo-design", "branding"]'>
-                <div class="img-bg-color primary">
-                    <a href="single-project.html" class="project-link"></a>
-                    <!-- / project-link -->
-                    <img src="images/m-project.jpg" alt="">
-                    <!-- / project-image -->
-
-                    <!-- project-hover-tools -->
-                    <div class="project-hover-tools">
-                        <a href="single-project.html" class="view-btn">
-                            <i class="lnr lnr-eye"></i>
-                        </a>
-                        <a href="images/m-project.jpg" class="open-gallery">
-                            <i class="lnr lnr-frame-expand"></i>
-                        </a>
-                    </div><!-- / project-hover-tools -->
-
-                    <!-- project-details -->
-                    <div class="project-details">
-                        <h5 class="project-title">PROJECT TITLE</h5>
-                        <p class="skill">SKILLS</p>
-                    </div><!-- / project-details -->
-                </div><!-- / img-bg-color -->
-            </li>
-            <!-- / project -->
-
-            <!-- project -->
-            <li class="col-xs-6 col-md-4 project" data-groups='["branding"]'>
+            <li class="col-xs-6 project" data-groups='["graphic-design", "logo-design", "branding"]'>
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->
@@ -294,34 +263,7 @@
             <!-- / project -->
 
             <!-- project -->
-            <li class="col-xs-6 col-md-4 project m-project" data-groups='["graphic-design", "branding"]'>
-                <div class="img-bg-color primary">
-                    <a href="single-project.html" class="project-link"></a>
-                    <!-- / project-link -->
-                    <img src="images/m-project.jpg" alt="">
-                    <!-- / project-image -->
-
-                    <!-- project-hover-tools -->
-                    <div class="project-hover-tools">
-                        <a href="single-project.html" class="view-btn">
-                            <i class="lnr lnr-eye"></i>
-                        </a>
-                        <a href="images/m-project.jpg" class="open-gallery">
-                            <i class="lnr lnr-frame-expand"></i>
-                        </a>
-                    </div><!-- / project-hover-tools -->
-
-                    <!-- project-details -->
-                    <div class="project-details">
-                        <h5 class="project-title">PROJECT TITLE</h5>
-                        <p class="skill">SKILLS</p>
-                    </div><!-- / project-details -->
-                </div><!-- / img-bg-color -->
-            </li>
-            <!-- / project -->
-
-            <!-- project -->
-            <li class="col-xs-6 col-md-4 project" data-groups='["illustration", "logo-design"]'>
+            <li class="col-xs-6 project" data-groups='["branding"]'>
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->
@@ -348,34 +290,7 @@
             <!-- / project -->
 
             <!-- project -->
-            <li class="col-xs-6 col-md-4 project m-project" data-groups='["branding"]'>
-                <div class="img-bg-color primary">
-                    <a href="single-project.html" class="project-link"></a>
-                    <!-- / project-link -->
-                    <img src="images/m-project.jpg" alt="">
-                    <!-- / project-image -->
-
-                    <!-- project-hover-tools -->
-                    <div class="project-hover-tools">
-                        <a href="single-project.html" class="view-btn">
-                            <i class="lnr lnr-eye"></i>
-                        </a>
-                        <a href="images/m-project.jpg" class="open-gallery">
-                            <i class="lnr lnr-frame-expand"></i>
-                        </a>
-                    </div><!-- / project-hover-tools -->
-
-                    <!-- project-details -->
-                    <div class="project-details">
-                        <h5 class="project-title">PROJECT TITLE</h5>
-                        <p class="skill">SKILLS</p>
-                    </div><!-- / project-details -->
-                </div><!-- / img-bg-color -->
-            </li>
-            <!-- / project -->
-
-            <!-- project -->
-            <li class="col-xs-6 col-md-4 project" data-groups='["graphic-design", "branding"]'>
+            <li class="col-xs-6 project" data-groups='["graphic-design", "branding"]'>
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->
@@ -402,11 +317,11 @@
             <!-- / project -->
 
             <!-- project -->
-            <li class="col-xs-6 col-md-4 project m-project" data-groups='["logo-design", "branding"]'>
+            <li class="col-xs-6 project" data-groups='["illustration", "logo-design"]'>
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->
-                    <img src="images/m-project.jpg" alt="">
+                    <img src="images/project.jpg" alt="">
                     <!-- / project-image -->
 
                     <!-- project-hover-tools -->
@@ -414,7 +329,7 @@
                         <a href="single-project.html" class="view-btn">
                             <i class="lnr lnr-eye"></i>
                         </a>
-                        <a href="images/m-project.jpg" class="open-gallery">
+                        <a href="images/project.jpg" class="open-gallery">
                             <i class="lnr lnr-frame-expand"></i>
                         </a>
                     </div><!-- / project-hover-tools -->
@@ -429,7 +344,88 @@
             <!-- / project -->
 
             <!-- project -->
-            <li class="col-xs-6 col-md-4 project" data-groups='["illustration"]'>
+            <li class="col-xs-6 project" data-groups='["branding"]'>
+                <div class="img-bg-color primary">
+                    <a href="single-project.html" class="project-link"></a>
+                    <!-- / project-link -->
+                    <img src="images/project.jpg" alt="">
+                    <!-- / project-image -->
+
+                    <!-- project-hover-tools -->
+                    <div class="project-hover-tools">
+                        <a href="single-project.html" class="view-btn">
+                            <i class="lnr lnr-eye"></i>
+                        </a>
+                        <a href="images/project.jpg" class="open-gallery">
+                            <i class="lnr lnr-frame-expand"></i>
+                        </a>
+                    </div><!-- / project-hover-tools -->
+
+                    <!-- project-details -->
+                    <div class="project-details">
+                        <h5 class="project-title">PROJECT TITLE</h5>
+                        <p class="skill">SKILLS</p>
+                    </div><!-- / project-details -->
+                </div><!-- / img-bg-color -->
+            </li>
+            <!-- / project -->
+
+            <!-- project -->
+            <li class="col-xs-6 project" data-groups='["graphic-design", "branding"]'>
+                <div class="img-bg-color primary">
+                    <a href="single-project.html" class="project-link"></a>
+                    <!-- / project-link -->
+                    <img src="images/project.jpg" alt="">
+                    <!-- / project-image -->
+
+                    <!-- project-hover-tools -->
+                    <div class="project-hover-tools">
+                        <a href="single-project.html" class="view-btn">
+                            <i class="lnr lnr-eye"></i>
+                        </a>
+                        <a href="images/project.jpg" class="open-gallery">
+                            <i class="lnr lnr-frame-expand"></i>
+                        </a>
+                    </div><!-- / project-hover-tools -->
+
+                    <!-- project-details -->
+                    <div class="project-details">
+                        <h5 class="project-title">PROJECT TITLE</h5>
+                        <p class="skill">SKILLS</p>
+                    </div><!-- / project-details -->
+                </div><!-- / img-bg-color -->
+            </li>
+            <!-- / project -->
+
+            <!-- project -->
+            <li class="col-xs-6 project" data-groups='["logo-design", "branding"]'>
+                <div class="img-bg-color primary">
+                    <a href="single-project.html" class="project-link"></a>
+                    <!-- / project-link -->
+                    <img src="images/project.jpg" alt="">
+                    <!-- / project-image -->
+
+                    <!-- project-hover-tools -->
+                    <div class="project-hover-tools">
+                        <a href="single-project.html" class="view-btn">
+                            <i class="lnr lnr-eye"></i>
+                        </a>
+                        <a href="images/project.jpg" class="open-gallery">
+                            <i class="lnr lnr-frame-expand"></i>
+                        </a>
+                    </div><!-- / project-hover-tools -->
+
+                    <!-- project-details -->
+                    <div class="project-details">
+                        <h5 class="project-title">PROJECT TITLE</h5>
+                        <p class="skill">SKILLS</p>
+                    </div><!-- / project-details -->
+                </div><!-- / img-bg-color -->
+            </li>
+            <!-- / project -->
+
+            <!-- project -->
+            <li class="col-xs-6 project" data-groups='["illustration"]'>
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->
@@ -456,7 +452,7 @@
             <!-- / project -->
 
             <!-- sizer -->
-            <li class="col-xs-6 col-md-4 shuffle_sizer"></li>      
+            <li class="col-xs-6 shuffle_sizer"></li>      
         </ul> <!-- / projects -->
     </div><!-- / container -->
 
@@ -466,17 +462,17 @@
 <!-- / content -->
 
 <!-- footer -->
-<footer>
+<!-- <footer>
     <div class="container">
-        <p class="footer-info">© MP - MINIMAL PORTFOLIO
+        <p class="footer-info">I hope you enjoyed your stay.
             <span class="social pull-right">
                 <a href="#x"><i class="fa fa-facebook"></i></a>
                 <a href="#x"><i class="fa fa-twitter"></i></a>
                 <a href="#x"><i class="fa fa-instagram"></i></a>
             </span>
         </p>
-    </div><!-- / container -->
-</footer>
+    </div>
+</footer> -->
 <!-- / footer -->
 
 <!-- javascript -->
